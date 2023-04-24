@@ -11,6 +11,8 @@ SOURCES += \
 
 HEADERS += \
     EnemyDog.h \
+    EnemyRam.h \
+    EnemySonic.h \
     enemy.h \
     game.h \
     test.h

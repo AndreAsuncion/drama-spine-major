@@ -1,36 +1,39 @@
-#ifndef ENEMYDOG_H
-#define ENEMYDOG_H
+#ifndef ENEMYSONIC_H
+#define ENEMYSONIC_H
+
 #include "enemy.h"
-#include <stdlib.h>     /* srand, rand */
-#include <time.h>
-#include <iostream>
 
-
-class Dog : public Enemy {
-    Enemy dog;
-
+class Sonic{
+    Enemy sonic;
 public:
-    Dog(){
+//    Dog(){
 //        Enemy(1,20,2);
-        dog.setHealth(20);
-        dog.setDamage(2);
-        dog.setDiff(1);
+//        dog.setHealth(20);
+//        dog.setDamage(2);
+//        dog.setDiff(1);
+//    }
+    sonic(){
+        sonic.setHealth(15);
+        sonic.setDamage(4);
+        sonic.setDiff(4);
     }
-    bool isDead(){
-        int dogHp = dog.getHP();
 
-        if(dogHp <= 0){
+    bool isDead(){
+        int sonicHp = sonic.getHP();
+
+        if(sonicHp <= 0){
             std::cout << "You've killed dog";
             return true;
         } else{
             return false;
         }
     }
+
     void takeDamage(int d){
-        int dogHp = dog.getHP();
+        int sonicHp = sonicHp.getHP();
 
         if(!isDead()){
-            dogHP -= d;
+            sonicHp -= d;
         } else {
             std::cout << "You've already killed dog";
         }
@@ -42,11 +45,11 @@ public:
         srand (time(NULL));
 
         /* generate secret number between 1 and class.Damage: */
-        damageGiven = rand() % dog.damage + 1;
+        damageGiven = rand() % sonicHp.damage + 1;
 
         return damageGiven;
     }
 };
 
 
-#endif // ENEMYDOG_H
+#endif // ENEMYSONIC_H
