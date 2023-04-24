@@ -4,6 +4,7 @@
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>
 
+
 class Dog : public Enemy {
     Enemy dog;
 
@@ -14,7 +15,9 @@ public:
         dog.setDiff(1);
     }
     bool isDead(){
-        if(dog.healthPoints <= 0){
+        int dogHp = getHP();
+
+        if(dogHp <= 0){
             std::cout << "You've killed dog";
             return true;
         } else{
@@ -22,8 +25,10 @@ public:
         }
     }
     void takeDamage(int d){
+        int dogHp = getHP();
+
         if(!isDead()){
-            dog.healthPoints -= d;
+            dogHP -= d;
         } else {
             std::cout << "You've already killed dog";
         }
