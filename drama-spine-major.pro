@@ -10,6 +10,8 @@ SOURCES += \
     main.cpp
 
 HEADERS += \
+    EnemyDog.h \
+    enemy.h \
     game.h
 
 RESOURCES += \
