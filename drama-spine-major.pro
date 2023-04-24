@@ -7,12 +7,13 @@ greaterThan(QT_MAJOR_VERSION, 5): QT += widgets
 
 SOURCES += \
     enemy.cpp \
+    enemyRam.cpp \
     game.cpp \
     main.cpp
 
 HEADERS += \
     EnemyDog.h \
-    EnemyRam.h \
+    enemyRam.h \
     EnemySonic.h \
     enemy.h \
     game.h \
