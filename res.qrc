@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/images">
         <file>menu.jpg</file>
+        <file>ram.png</file>
+        <file>shadowthehedgehog.jpg</file>
     </qresource>
 </RCC>
