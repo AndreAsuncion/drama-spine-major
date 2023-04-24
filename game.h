@@ -5,6 +5,7 @@
 #include <QWidget>
 #include <QGraphicsView>
 #include <QGraphicsPixmapItem>
+#include "enemy.h"
 
 class Game : public QGraphicsView
 {
