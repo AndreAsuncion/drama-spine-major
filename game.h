@@ -5,7 +5,7 @@
 #include <QWidget>
 #include <QGraphicsView>
 #include <QGraphicsPixmapItem>
-#include "enemy.h"
+#include <QPushButton>
 
 class Game : public QGraphicsView
 {
@@ -13,6 +13,8 @@ public:
     Game(QWidget * parent = 0);
 
     QGraphicsScene * scene;
+    QGraphicsPixmapItem * menu;
+    QGraphicsView * view;
 };
 
 #endif // MAINMENU_H

@@ -2,35 +2,33 @@
 #define ENEMY_H
 
 #include <iostream>
+#include <QGraphicsPixmapItem>
+#include <QObject>
+#include <QGraphicsItem>
 
-class Enemy {
-    //this is a multiplier for damge. so diff = 1 will be damge# * diff
-    int difficulty; //out of 5. 1 being easy 5 hardest
-    int healthPoints;
-    int damage;
+class Enemy: public QObject, public QGraphicsPixmapItem {
+private:
+    int difficulty, healthPoints, baseDamage, type;
+    // difficulty is a damage scalar
+    // healthPoints represents the health
+    // baseDamage is damage before modifiers
+    // type is based on a rock paper scissors modifier
+    // 0 - normal (no changes)
+    // 1 - rock (2.0x to scissors, 0.5x to paper)
+    // 2 - paper (2.0x to rock, 0.5x to scissors)
+    // 3 - scissors (2.0x to paper, 0.5x to rock)
 public:
-    Enemy() : difficulty(0), healthPoints(0), damage(0) {};
+    Enemy();
+    Enemy(int a, int b, int c, int d);
 
-    Enemy(int x, int y, int z) : difficulty(x), healthPoints(y), damage(z) {};
+    // Variable getters
+    int getDifficulty();
+    int getHealthPoints();
+    int getBaseDamage();
+    int getType();
 
-    void setDiff(int d){
-        this->difficulty = d;
-    }
-    void setHealth(int hp){
-        this->healthPoints = hp;
-    }
-    void setDamage(int d){
-        this->damage = d;
-    }
-    int getDiff(){
-        return this->difficulty;
-    }
-    int getHP(){
-        return this->healthPoints;
-    }
-    int getDamage(){
-        return this->damage;
-    }
+    // Variable modifiers
+    void healthModifier(int x);
 };
 
 
