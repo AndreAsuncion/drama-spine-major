@@ -12,7 +12,8 @@ SOURCES += \
 HEADERS += \
     EnemyDog.h \
     enemy.h \
-    game.h
+    game.h \
+    test.h
 
 RESOURCES += \
     res.qrc
