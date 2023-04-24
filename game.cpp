@@ -18,5 +18,4 @@ Game::Game(QWidget * parent)
     QGraphicsView * view = new QGraphicsView(scene);
     view->show();
 
-
 }

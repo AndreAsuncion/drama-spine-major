@@ -9,7 +9,9 @@ class Enemy {
     int healthPoints;
     int damage;
 public:
+    Enemy() : difficulty(0), healthPoints(0), damage(0) {};
 
+    Enemy(int x, int y, int z) : difficulty(x), healthPoints(y), damage(z) {};
 
     void setDiff(int d){
         this->difficulty = d;
