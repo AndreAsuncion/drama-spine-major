@@ -33,8 +33,6 @@ Game::Game(QWidget * parent)
     // Set the scene background color
     mapScene->setBackgroundBrush(Qt::gray);
 
-
-
     // Put scene into view
     view = new QGraphicsView(mapScene);
     view->setFixedSize(800,600); // set the fixed size to 800x600
