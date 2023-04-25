@@ -1,6 +1,6 @@
 #include "enemy.h"
 
-Enemy::Enemy() : difficulty(0), healthPoints(0), baseDamage(0), type(0) {};
+//Enemy::Enemy() : difficulty(0), healthPoints(0), baseDamage(0), type(0) {};
 
 Enemy::Enemy(int hp, int dam) : healthPoints(hp), baseDamage(dam) {};
 
