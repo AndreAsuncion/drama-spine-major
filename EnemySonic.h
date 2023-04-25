@@ -11,7 +11,7 @@ public:
     void takeDamage(int d){};
 
     void attack(){};
-
+    bool isDead(){};
 
 
 

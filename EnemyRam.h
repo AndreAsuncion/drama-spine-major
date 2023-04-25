@@ -7,6 +7,11 @@ class Ram : public Enemy
 {
 public:
     Ram(int hp, int dam);
+
+    void takeDamage(int d){};
+
+    int attack(){};
+    bool isDead(){};
 };
 
 
