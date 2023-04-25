@@ -15,37 +15,13 @@ public:
         dog.setHealth(20);
         dog.setDamage(2);
         dog.setDiff(1);
+
     }
-    bool isDead(){
-        int dogHp = dog.getHP();
+    bool isDead(){};
 
-        if(dogHp <= 0){
-            std::cout << "You've killed dog";
-            return true;
-        } else{
-            return false;
-        }
-    }
-    void takeDamage(int d){
-        int dogHp = dog.getHP();
+    void takeDamage(int d){};
 
-        if(!isDead()){
-            dogHP -= d;
-        } else {
-            std::cout << "You've already killed dog";
-        }
-    }
-
-    void attack(){
-        /* initialize random seed: */
-        int damageGiven;
-        srand (time(NULL));
-
-        /* generate secret number between 1 and class.Damage: */
-        damageGiven = rand() % dog.damage + 1;
-
-        return damageGiven;
-    }
+    void attack(){};
 };
 
 

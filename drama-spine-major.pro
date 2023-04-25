@@ -7,7 +7,9 @@ greaterThan(QT_MAJOR_VERSION, 5): QT += widgets
 
 SOURCES += \
     enemy.cpp \
+    enemyDog.cpp \
     enemyRam.cpp \
+    enemySonic.cpp \
     game.cpp \
     main.cpp
 
