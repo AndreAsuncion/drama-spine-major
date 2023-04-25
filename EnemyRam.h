@@ -5,10 +5,12 @@
 
 class Ram : public Enemy
 {
+
 public:
     // Constructors
     Ram();
-    Ram(int a, int b, int c, int d);
+    Ram(int a, int b, int c, int d){
+    };
 };
 
 

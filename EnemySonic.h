@@ -6,12 +6,7 @@
 class Sonic{
     Enemy sonic;
 public:
-//    Dog(){
-//        Enemy(1,20,2);
-//        dog.setHealth(20);
-//        dog.setDamage(2);
-//        dog.setDiff(1);
-//    }
+
     sonic(){
         sonic.setHealth(15);
         sonic.setDamage(4);
