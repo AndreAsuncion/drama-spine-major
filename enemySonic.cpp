@@ -1,17 +1,5 @@
 #include "EnemySonic.h"
 
-Dog::isDead(){
-    int health = Enemy::getHealthPoints();
-    if(health <= 0){
-        std::cout << "Dog is dead";
-        return true;
-    }
-    return false;
-}
-
-\
-
-
 Sonic::sonic(22, 4);
 
 Sonic::attack(){
