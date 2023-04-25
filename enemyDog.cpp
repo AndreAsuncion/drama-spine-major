@@ -4,13 +4,13 @@
 Enemy dog;
 
 dog(){
-    dog.setHP(20);
+    dog.getHealthPoints(20);
     dog.setDiff(2);
     dog.setDamage(1);
 }
 
 bool isDead(){
-    int dogHp = dog.getHP();
+    int dogHp = dog.getHealthPoints();
 
     if(dogHp <= 0){
         std::cout << "You've killed dog";
@@ -21,7 +21,7 @@ bool isDead(){
 }
 
 void takeDamage(int d){
-    int dogHp = dog.getHP();
+    int dogHp = dog.getHealthPoints();
 
     if(!isDead()){
         dogHP -= d;
@@ -36,7 +36,7 @@ int attack(){
     srand (time(NULL));
 
     /* generate secret number between 1 and class.Damage: */
-    damageGiven = rand() % dog.damage + 1;
+    damageGiven = rand() % dog.baseDamage + 1;
 
     return damageGiven;
 }
