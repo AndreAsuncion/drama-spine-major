@@ -27,14 +27,6 @@ public:
     int getBaseDamage();
     int getType();
 
-    void setHP(int hp){
-//        this->healthPoints = hp;
-    }
-    void setDiff(int diff){
-
-    }
-    void setDamage(int damage){}
-
     // Variable modifiers
     void healthModifier(int x);
 };

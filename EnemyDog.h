@@ -10,13 +10,7 @@ class Dog : public Enemy {
     Enemy dog;
 
 public:
-    Dog(){
-//        Enemy(1,20,2);
-        dog.setHealth(20);
-        dog.setDamage(2);
-        dog.setDiff(1);
-
-    }
+    Dog(){}
     bool isDead(){};
 
     void takeDamage(int d){};
