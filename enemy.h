@@ -8,27 +8,18 @@
 
 class Enemy: public QObject, public QGraphicsPixmapItem {
 private:
-    int difficulty, healthPoints, baseDamage, type;
-    // difficulty is a damage scalar
-    // healthPoints represents the health
-    // baseDamage is damage before modifiers
-    // type is based on a rock paper scissors modifier
-    // 0 - normal (no changes)
-    // 1 - rock (2.0x to scissors, 0.5x to paper)
-    // 2 - paper (2.0x to rock, 0.5x to scissors)
-    // 3 - scissors (2.0x to paper, 0.5x to rock)
+    int  healthPoints, baseDamage;
+
 public:
     Enemy();
-    Enemy(int a, int b, int c, int d);
+    Enemy(int hp, int dam);
 
     // Variable getters
-    int getDifficulty();
     int getHealthPoints();
     int getBaseDamage();
-    int getType();
 
     // Variable modifiers
-    void healthModifier(int x);
+//    void healthModifier(int x);
 };
 
 

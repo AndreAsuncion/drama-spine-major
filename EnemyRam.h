@@ -6,7 +6,7 @@
 class Ram : public Enemy
 {
 public:
-    Ram(int a, int b, int c, int d);
+    Ram(int hp, int dam);
 };
 
 

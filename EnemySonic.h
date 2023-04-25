@@ -7,43 +7,14 @@ class Sonic{
     Enemy sonic;
 public:
 
-    sonic(){
-        sonic.setHealth(15);
-        sonic.setDamage(4);
-        sonic.setDiff(4);
-    }
+    sonic(){};
+    void takeDamage(int d){};
 
-    bool isDead(){
-        int sonicHp = sonic.getHP();
+    void attack(){};
 
-        if(sonicHp <= 0){
-            std::cout << "You've killed dog";
-            return true;
-        } else{
-            return false;
-        }
-    }
 
-    void takeDamage(int d){
-        int sonicHp = sonicHp.getHP();
 
-        if(!isDead()){
-            sonicHp -= d;
-        } else {
-            std::cout << "You've already killed dog";
-        }
-    }
 
-    void attack(){
-        /* initialize random seed: */
-        int damageGiven;
-        srand (time(NULL));
-
-        /* generate secret number between 1 and class.Damage: */
-        damageGiven = rand() % sonicHp.damage + 1;
-
-        return damageGiven;
-    }
 };
 
 
